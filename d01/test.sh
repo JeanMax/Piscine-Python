@@ -57,11 +57,11 @@ test_ex05() {
 Montgomery is the capital of Alabama (akr: AL)
 Toto is neither a capital city nor a state
 Montgomery is the capital of Alabama (akr: AL)") \
-		 <(./ex05/whereto.py "Salem , ,Alabama, Toto , ,MontGOmery")
+		 <(./ex05/all_in.py "Salem , ,Alabama, Toto , ,MontGOmery")
 	diff <(echo "Trenton is the capital of New Jersey (akr: NJ)") \
-		 <(./ex05/whereto.py " ,nEw jeRsEy, , ")
-	diff <(true) <(./ex05/whereto.py)
-	diff <(true) <(./ex05/whereto.py Salem Denver)
+		 <(./ex05/all_in.py " ,nEw jeRsEy, , ")
+	diff <(true) <(./ex05/all_in.py)
+	diff <(true) <(./ex05/all_in.py Salem Denver)
 }
 
 test_ex06() {
@@ -79,5 +79,5 @@ test_ex01
 test_ex02
 test_ex03
 test_ex04
-# test_ex05
+test_ex05
 # test_ex06

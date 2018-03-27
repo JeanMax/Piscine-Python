@@ -3,6 +3,18 @@
 import sys
 
 
+def get_key(h, v):
+    """Super Opti"""
+
+    if v not in h.values():
+        return None
+
+    for k in h.keys():
+        if h[k] == v:
+            return k
+    return None
+
+
 def uneautrefonction(capital):
     """Ceci est une autre fonction"""
 
@@ -20,13 +32,9 @@ def uneautrefonction(capital):
         "CO": "Denver"
     }
 
-    if capital in capitals_cities.values():
-        for k in capitals_cities.keys():
-            if capitals_cities[k] == capital:
-                for state in states.keys():
-                    if states[state] == k:
-                        print(state)
-                        return
+    akr = get_key(capitals_cities, capital)
+    if akr is not None:
+        print(get_key(states, akr))
     else:
         print("Unknown capital city")
 
