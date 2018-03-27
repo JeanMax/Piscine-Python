@@ -17,21 +17,23 @@ test_ex01() {
 }
 
 test_ex02() {
-	diff <(echo "24 : Caleb
-84 : Calixte
-65 : Calliste
-12 : Calvin
-54 : Carter
-32 : Camil
-5 : Camille
-52 : Can
-56 : Caner
-4 : Cantin
-1 : Carl
-23 : Carlito
-19 : Carlo
-26 : Carlos
-2 : Casey") <(./ex02/H2o.py)  # TODO: I guess ruby hash-tables aren't sorted...
+	diff <(echo "1942 : Garcia
+1946 : Allman
+1925 : King
+1945 : Clapton
+1911 : Johnson
+1926 : Berry
+1954 : Vaughan
+1947 : Santana
+1944 : Beck
+1943 : Richards
+1962 : Hammett
+1967 : Cobain
+1948 : Ramone
+1975 : White
+1970 : Frusciante
+1949 : Thompson
+1939 : Burton") <(./ex02/var_to_dict.py)  # TODO: python hash-tables aren't sorted...
 }
 
 test_ex03() {
@@ -74,7 +76,7 @@ Frank") <(./ex06/CoffeeCroissant.py)
 
 test_ex00
 test_ex01
-# test_ex02
+test_ex02
 # test_ex03
 # test_ex04
 # test_ex05
