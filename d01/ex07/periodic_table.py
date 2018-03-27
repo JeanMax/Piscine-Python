@@ -107,25 +107,25 @@ class Write:
         """Write our awesome html file"""
 
         with open(filename, "w") as f:
-            Write._writeHeader(f)
+            Write.__writeHeader(f)
 
-            Write._openRow(f)
+            Write.__openRow(f)
             i = 0
             for elm in Parse.data:
                 while i != elm["position"]:
-                    Write._writeEmptyElement(f)
+                    Write.__writeEmptyElement(f)
                     i += 1
 
-                Write._writeElement(f, elm)
+                Write.__writeElement(f, elm)
                 i += 1
 
                 if elm["position"] == 17:
                     i = 0
-                    Write._closeRow(f)
+                    Write.__closeRow(f)
                     if elm["number"] != 118:
-                        Write._openRow(f)
+                        Write.__openRow(f)
 
-            Write._writeFooter(f)
+            Write.__writeFooter(f)
 
 
 def doTheJob(input_file):
