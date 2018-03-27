@@ -37,11 +37,11 @@ test_ex02() {
 }
 
 test_ex03() {
-	diff <(echo "Salem") <(./ex03/Where.py Oregon)
-	diff <(echo "Unknown state") <(./ex03/Where.py toto)
-	diff <(true) <(./ex03/Where.py)
-	diff <(true) <(./ex03/Where.py Oregon Alabama)
-	diff <(true) <(./ex03/Where.py Oregon Alabama Ile-De-France)
+	diff <(echo "Salem") <(./ex03/capital_city.py Oregon)
+	diff <(echo "Unknown state") <(./ex03/capital_city.py toto)
+	diff <(true) <(./ex03/capital_city.py)
+	diff <(true) <(./ex03/capital_city.py Oregon Alabama)
+	diff <(true) <(./ex03/capital_city.py Oregon Alabama Ile-De-France)
 }
 
 test_ex04() {
@@ -77,7 +77,7 @@ Frank") <(./ex06/CoffeeCroissant.py)
 test_ex00
 test_ex01
 test_ex02
-# test_ex03
+test_ex03
 # test_ex04
 # test_ex05
 # test_ex06
