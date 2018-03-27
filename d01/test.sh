@@ -65,12 +65,26 @@ Montgomery is the capital of Alabama (akr: AL)") \
 }
 
 test_ex06() {
-	diff <(echo "Stacy
-Jill
-Juan
-Steve
-Dom
-Frank") <(./ex06/CoffeeCroissant.py)
+	diff <(echo "Johnson
+King
+Berry
+Burton
+Garcia
+Hendrix
+Richards
+Beck
+Page
+Clapton
+Allman
+Cooder
+Santana
+Ramone
+Thompson
+Vaughan
+Hammett
+Cobain
+Frusciante
+White") <(./ex06/my_sort.py)
 }
 
 
@@ -80,4 +94,4 @@ test_ex02
 test_ex03
 test_ex04
 test_ex05
-# test_ex06
+test_ex06
