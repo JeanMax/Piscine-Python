@@ -13,7 +13,7 @@ set() est de type <class 'set'>") <(./ex00/var.py)
 }
 
 test_ex01() {
-	diff <(sort -h ex01/numbers.txt | cut -d, -f1) <(./ex01/croissant.py)
+	diff <(for i in {1..100}; do echo $i; done) <(./ex01/numbers.py)
 }
 
 test_ex02() {
@@ -73,7 +73,7 @@ Frank") <(./ex06/CoffeeCroissant.py)
 
 
 test_ex00
-# test_ex01
+test_ex01
 # test_ex02
 # test_ex03
 # test_ex04
