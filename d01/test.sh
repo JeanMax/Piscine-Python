@@ -45,11 +45,11 @@ test_ex03() {
 }
 
 test_ex04() {
-	diff <(echo "Oregon") <(./ex04/erehW.py Salem)
-	diff <(echo "Unknown capital city") <(./ex04/erehW.py toto)
-	diff <(true) <(./ex04/erehW.py)
-	diff <(true) <(./ex04/erehW.py Salem Denver)
-	diff <(true) <(./ex04/erehW.py Salem Denver Ile-De-France)
+	diff <(echo "Oregon") <(./ex04/state.py Salem)
+	diff <(echo "Unknown capital city") <(./ex04/state.py toto)
+	diff <(true) <(./ex04/state.py)
+	diff <(true) <(./ex04/state.py Salem Denver)
+	diff <(true) <(./ex04/state.py Salem Denver Ile-De-France)
 }
 
 test_ex05() {
@@ -78,6 +78,6 @@ test_ex00
 test_ex01
 test_ex02
 test_ex03
-# test_ex04
+test_ex04
 # test_ex05
 # test_ex06
