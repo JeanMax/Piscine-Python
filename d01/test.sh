@@ -13,7 +13,7 @@ set() est de type <class 'set'>") <(./ex00/var.py)
 }
 
 test_ex01() {
-	diff <(for i in {1..100}; do echo $i; done) <(./ex01/numbers.py)
+	diff <(seq 1 100) <(./ex01/numbers.py)
 }
 
 test_ex02() {
@@ -88,10 +88,8 @@ White") <(./ex06/my_sort.py)
 }
 
 
-test_ex00
-test_ex01
-test_ex02
-test_ex03
-test_ex04
-test_ex05
-test_ex06
+for i in {0..6}; do
+	echo "+ Testing ex0$i:"
+	test_ex0$i
+	echo
+done
