@@ -15,7 +15,7 @@ class Intern:
         raise Exception("I’m just an intern, I can’t do that...")
 
     def make_coffee(self):
-        return Coffee()
+        return self.Coffee()
 
 
 if __name__ == '__main__':
